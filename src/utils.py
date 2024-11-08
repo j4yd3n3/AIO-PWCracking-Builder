@@ -61,16 +61,3 @@ def create_set(orig_set: set, options: list) -> set:
             created_set.update(src.prepend.prepend_3digit(created_set))
 
     return created_set
-
-
-# Function to make sure the correct # of arguments are provided
-#def check_file():
-"""if len(sys.argv) < 3:
-    print("Usage: python crack.py <path/to/your/list.txt> <path/to/desired/save/path.txt>")
-    sys.exit(1)
-else:
-    file_path = sys.argv[1]
-    output_file_path = sys.argv[2]    
-    unique_lines = read_file_to_set(file_path)
-    for line in unique_lines:
-        print(line)"""
