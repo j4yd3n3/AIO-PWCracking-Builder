@@ -10,7 +10,7 @@ def greeting(output_file):
     print("###########################################################")
     print("#               All-in-One PW List Formatter             #")
     print("###########################################################")
-    print("\nChoose your options for modifying your list, separated by commas.")
+    print("\nChoose your options for modifying your list, one at a time.")
     print("Note: The order you select the options will be the order in which modifications are applied.")
     print("\nAvailable Options:")
     print(" 1. Basic Leet")
