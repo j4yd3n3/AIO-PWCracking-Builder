@@ -53,8 +53,3 @@ def prepend_tres(orig: set) -> set:
             	for char3 in char_possibilities:
                 	prepend_combinations.add(char1 + char2 + char3 + word) 
     return prepend_combinations
-
-# Example usage
-# test_set = {"Egg"}
-# print(len(prepend_2digit(test_set)))
-# print(len(prepend_3digit(test_set)))
