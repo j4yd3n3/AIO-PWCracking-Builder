@@ -15,7 +15,7 @@ def greeting(output_file):
     print("\nAvailable Options:")
     print(" 1. Basic Leet")
     print(" 2. Toggles/Cases")
-    print(" 3. Expand Spacers\n")
+    print(" 3. Expand Spaces\n")
     print(" 4. Append 1 Char")
     print(" 5. Append 2 Chars")
     print(" 6. Append 3 Chars\n")
@@ -70,8 +70,6 @@ def main():
 
     user_options = greeting(output_file_path)
     modified_set = src.utils.create_set(orig_set, user_options)
-    
-    # Write the modified set to the output file
     write_set_to_file(output_file_path, modified_set)
 
 if __name__ == '__main__':
