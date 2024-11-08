@@ -31,7 +31,6 @@ def create_set(orig_set: set, options: list) -> set:
             created_set.update(src.leet.leet(created_set))
         elif option == 2:
             created_set.update(src.toggles.toggle(created_set))
-        # Add more elif conditions for other options
         elif option == 4:
             created_set.update(src.append.append_uno(created_set))
         elif option == 5:
@@ -40,8 +39,6 @@ def create_set(orig_set: set, options: list) -> set:
             created_set.update(src.append.append_tres(created_set))
         elif option == 7:
             created_set.update(src.append.append_digit(created_set))
-            print(options)
-            print(f"After option 7 (append 1 digit), set size: {len(created_set)}")
         elif option == 8:
             created_set.update(src.append.append_2digit(created_set))
         elif option == 9:
@@ -53,7 +50,6 @@ def create_set(orig_set: set, options: list) -> set:
         elif option == 12:
             created_set.update(src.prepend.prepend_tres(created_set))
         elif option == 13:
-            print(options)
             created_set.update(src.prepend.prepend_digit(created_set))
         elif option == 14:
             created_set.update(src.prepend.prepend_2digit(created_set))
