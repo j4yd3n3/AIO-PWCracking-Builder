@@ -53,8 +53,3 @@ def append_tres(orig: set) -> set:
             	for char3 in char_possibilities:
                 	append_combinations.add(word + char1 + char2 + char3) 
     return append_combinations
-
-# Example usage
-# test_set = {"Egg"}
-# print(len(append_2digit(test_set)))
-# print(len(append_3digit(test_set)))
