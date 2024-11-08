@@ -10,8 +10,8 @@ import src.utils
 char_possibilities = list("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!@#$%^&*(){}[]:\"\\/|;,.<>~-_=0123456789")
 
 def append_digit(orig:set) -> set:
+	append_combinations = set()
 	for word in orig:
-		append_combinations = set()
 		for i in range(0,10):
 			append_combinations.add(word + str(i))
 	return append_combinations
@@ -24,8 +24,8 @@ def append_2digit(orig:set) -> set:
 	return append_combinations
 
 def append_3digit(orig:set) -> set:
+	append_combinations = set()
 	for word in orig:
-		append_combinations = set()
 		for i in range(100,1000):
 			append_combinations.add(word + str(i))
 	return append_combinations
