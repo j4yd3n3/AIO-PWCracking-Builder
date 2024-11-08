@@ -28,14 +28,5 @@ def leet(orig: set) -> set:
 
         for combination in product(*char_options):
             leet_word = ''.join(combination)
-            leet_combinations.add(leet_word)  # Add each leet word to the set
-
-    # Uncomment the following line to see how many combinations were created
-    # print("\nTotal combinations generated:", len(leet_combinations))
+            leet_combinations.add(leet_word)  
     return leet_combinations
-
-# Testing:
-# test_set = {"Egg"}
-# print(leet(test_set))
-# print(type(leet(test_set)))
-# print(len(leet(test_set)))
