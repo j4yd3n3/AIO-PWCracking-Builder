@@ -1,5 +1,5 @@
-To run script: python crack.py </original/list/file> </new/list/location>
-
+# To run 
+python crack.py </original/list/file> </new/list/location>
 
 Option 3 hasn't been implemented yet (Expanding spces).
 
