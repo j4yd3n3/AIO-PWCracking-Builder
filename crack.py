@@ -8,7 +8,7 @@ import src.utils
 
 def greeting(output_file):
     print("###########################################################")
-    print("#               All-in-One PW List Formatter             #")
+    print("#               AIO-PWCracking-Builder                    #")
     print("###########################################################")
     print("\nChoose your options for modifying your list, one at a time.")
     print("Note: The order you select the options will be the order in which modifications are applied.")
@@ -28,6 +28,7 @@ def greeting(output_file):
     print("13. Prepend 1 Digit")
     print("14. Prepend 2 Digit")
     print("15. Prepend 3 Digit")
+    print("16. Common NCL Formats (TIME INTENSIVE... Use with shorter lists)")
 
     print("\nType 's' at any time to start list generator.\n")
     user_options = []
@@ -38,7 +39,7 @@ def greeting(output_file):
             break
         try:
             option = int(user_input)
-            if option in range(1, 16):
+            if option in range(1, 17):
                 user_options.append(option)
                 print(f"Option {option} added.")
                 print("Current selected options:", user_options)

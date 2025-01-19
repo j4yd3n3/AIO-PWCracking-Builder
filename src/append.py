@@ -19,14 +19,14 @@ def append_digit(orig:set) -> set:
 def append_2digit(orig:set) -> set:
 	append_combinations = set()
 	for word in orig:
-		for i in range(10,100):
+		for i in range(0,100):
 			append_combinations.add(word + str(i))
 	return append_combinations
 
 def append_3digit(orig:set) -> set:
 	append_combinations = set()
 	for word in orig:
-		for i in range(100,1000):
+		for i in range(0,1000):
 			append_combinations.add(word + str(i))
 	return append_combinations
 
