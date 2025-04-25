@@ -53,3 +53,6 @@ def append_tres(orig: set) -> set:
             	for char3 in char_possibilities:
                 	append_combinations.add(word + char1 + char2 + char3) 
     return append_combinations
+
+def append_custom(orig: set, delimiter: str) -> set:
+    return {word + delimiter for word in orig}

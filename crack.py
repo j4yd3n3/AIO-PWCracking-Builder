@@ -5,6 +5,7 @@ import src.append
 import src.prepend
 import src.toggles
 import src.utils
+import src.combinator
 
 def greeting(output_file):
     print("###########################################################")
@@ -27,8 +28,10 @@ def greeting(output_file):
     print("12. Prepend 3 Chars\n")
     print("13. Prepend 1 Digit")
     print("14. Prepend 2 Digit")
-    print("15. Prepend 3 Digit")
-    print("16. Common NCL Formats (TIME INTENSIVE... Use with shorter lists)")
+    print("15. Prepend 3 Digit\n")
+    print("16. Common NCL Formats (TIME INTENSIVE... Use with very short lists)")    
+    print("17. Combine Words")
+    print("18. Append custom delimiter")
 
     print("\nType 's' at any time to start list generator.\n")
     user_options = []
@@ -39,12 +42,12 @@ def greeting(output_file):
             break
         try:
             option = int(user_input)
-            if option in range(1, 17):
+            if option in range(1, 19):
                 user_options.append(option)
                 print(f"Option {option} added.")
                 print("Current selected options:", user_options)
             else:
-                print("Invalid option. Please enter a number between 1 and 15.")
+                print("Invalid option. Please enter a number between 1 and 18.")
         except ValueError:
             print("Invalid input. Please enter a numeric value.")
     

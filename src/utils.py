@@ -59,5 +59,19 @@ def create_set(orig_set: set, options: list) -> set:
             created_set.update(src.expand.expand_spaces(created_set))
             created_set.update(src.leet.leet(created_set))
             created_set.update(src.toggles.toggle(created_set))
+        elif option == 17:
+            created_set.update(
+            src.combinator.combine(
+            created_set,
+            min_parts=2,
+            max_parts=2,
+            separators=[""],
+            max_length=32
+        ))
+        elif option == 18:
+            delimiter = input("Enter the custom delimiter: ")
+            created_set.update(src.append.append_custom(created_set, delimiter))
+
+
 
     return created_set
