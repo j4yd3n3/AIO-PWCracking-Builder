@@ -69,7 +69,7 @@ def create_set(orig_set: set, options: list) -> set:
             max_length=32
         ))
         elif option == 18:
-            delimiter = input("Enter the custom delimiter: ")
+            delimiter = input("Enter the custom string: ")
             created_set.update(src.append.append_custom(created_set, delimiter))
 
 

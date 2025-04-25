@@ -31,7 +31,7 @@ def greeting(output_file):
     print("15. Prepend 3 Digit\n")
     print("16. Common NCL Formats (TIME INTENSIVE... Use with very short lists)")    
     print("17. Combine Words")
-    print("18. Append custom delimiter")
+    print("18. Append custom string")
 
     print("\nType 's' at any time to start list generator.\n")
     user_options = []
